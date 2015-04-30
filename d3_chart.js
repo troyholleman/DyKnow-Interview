@@ -2,10 +2,11 @@
  * @author Troy Holleman
  */
 
-var width = $("#pieChart").width();
-var height = $("#pieChart").height();
+/**------------ d3 Pie Chart ----------------------------**/
+var width = $("#pieGraph").width();
+var height = ( $(window).height() - 50);
 
-var pie = new d3pie("pieChart", {
+var pie = new d3pie("pieGraph", {
 	"header": {
 		"title": {
 			"fontSize": 12,
@@ -13,22 +14,22 @@ var pie = new d3pie("pieChart", {
 		},
 		"subtitle": {
 			"color": "#ffffff",
-			"fontSize": 10,
+			"fontSize": 12,
 			"font": "roboto"
 		},
 		"titleSubtitlePadding": 9
 	},
 	"footer": {
 		"color": "#999999",
-		"fontSize": 10,
-		"font": "open sans",
+		"fontSize": 12,
+		"font": "roboto",
 		"location": "bottom-left"
 	},
 	"size": {
 		"canvasWidth": width,
 		"canvasHeight": height,
-		"pieInnerRadius": "50%",
-		"pieOuterRadius": "100%"
+		"pieInnerRadius": "45%",
+		"pieOuterRadius": "50%"
 	},
 	"data": {
 		"sortOrder": "value-desc",
@@ -72,7 +73,7 @@ var pie = new d3pie("pieChart", {
 		},
 		"value": {
 			"color": "#ffffff",
-			"fontSize": 11
+			"fontSize": 12
 		},
 		"lines": {
 			"enabled": true,
@@ -85,8 +86,8 @@ var pie = new d3pie("pieChart", {
 	"effects": {
 		"pullOutSegmentOnClick": {
 			"effect": "back",
-			"speed": 250,
-			"size": 12
+			"speed": 200,
+			"size": "20%"
 		}
 	},
 	"misc": {
@@ -94,11 +95,16 @@ var pie = new d3pie("pieChart", {
 			"background": "#6C6B6A"
 		}
 	}
-});
+})
+.attr("preserveAspectRatio", "xMidYMin meet")
+.attr("viewBox", "0 0 " + width + " " + height)
+	.attr("width", width)
+	.attr("height", height);
 
-// -------------------------------- Responsive SVG -------------------------------- //
+/** ----------------- Responsive SVG --------------------- **/
 
 $(window).resize(function() {
-  var width = $("#pieChart").width();
+  var width = $("#pieGraph").width();
   pieGraph.attr("width", width);
+  pieGraph.attr("height", height);
 });

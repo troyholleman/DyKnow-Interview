@@ -18,18 +18,25 @@
 	
 	<!-- Local Stylesheets & Javascripts -------------------------------->
 	<link rel='stylesheet' type='text/css' href='style.css'>
+	
 	<script src="d3_chart.js" async></script>
 	<script src="d3pie.min.js"></script>
+	<script src="vertical-timeline/js/main.js" async></script>
+	<script src="vertical-timeline/js/modernizr.js" async></script>
 	
 	<!-- Bootstrap CSS & Javascript ------------------------------------->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	
-	<!-- Roboto Font ------------------------------------------------>
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+	<!-- Roboto Font ---------------------------------------------------->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
 	
-	<!-- Font Awesome ---------------------------------------->
+	<!-- Font Awesome ---------------------------------------------------->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	
+	<!-- Low Priority Stylesheets ---------------------------------------->
+	<link rel='stylesheet' type='text/css' href='vertical-timeline/css/style.css'>
+	<link rel='stylesheet' type='text/css' href='vertical-timeline/css/reset.css'>
 
 	<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 	<link rel="shortcut icon" href="/favicon.ico">
@@ -38,8 +45,8 @@
 </head>
 
 <body>
-	
-	<header>
+		
+	<div id="header">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
@@ -47,24 +54,28 @@
 				</div>
 			</div>
 		</div>
-	</header>
+	</div>
 	
 	<div id="home" class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
 				<ul class="nav nav-pills">
-					<li role="presentation"><a href="#">Student's Screen</a></li>
-					<li role="presentation" class="active"><a href="#">Today's Activity</a></li>
+					<li role="presentation"><a href="#">
+						<i class="fa fa-desktop"></i>Student's Screen</a>
+					</li>
+					<li role="presentation" class="active"><a href="#">
+						<i class="fa fa-desktop"></i>Today's Activity</a>
+					</li>
 				</ul>
 			</div>
-			<div class="col-md-6 grey-bg">
-				<div id="pieChart" class="grey-bg"></div>
+			<div class="col-md-6">
+				<div id="pieGraph" class="grey-bg"></div>
 			</div>
 		</div>
 		
 	</div>
 	
-	<footer>
+	<div id="footer">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
@@ -72,7 +83,7 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</div>
 	
 </body>
 
