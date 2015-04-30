@@ -1,0 +1,89 @@
+
+/* ----------------------- Colors ----------------------- */
+
+.white {color: white !important; }
+.grey-blue {color: #6298BE !important; }
+.light-blue {color: #2CA6DD !important; }
+.grey-green {color: #B5CA74 !important; }
+.lime {color: #99CC00 !important; }
+.orange {color: #FFBA33 !important; }
+.red {color: #FF4444 !important; }
+.purple {color: #AA66CC !important; }
+.light-grey { color: #6C6B6A; !important; }
+.med-grey { color: #404041; !important; }
+.dark-grey { color: #212121; !important; }
+
+body .white-bg { background-color: white !important; }
+body .g-blue-bg { background-color: #6298BE !important; }
+body .l-blue-bg { background-color: #2CA6DD !important; }
+body .green-bg { background-color: #B5CA74 !important; }
+body .lime-bg { background-color: #99CC00 !important; }
+body .orange-bg { background-color: #FFBA33 !important; }
+body .red-bg { background-color: #FF4444 !important; }
+body .purple-bg { background-color: #AA66CC !important; }
+body .grey-bg { background-color: #6C6B6A !important; }
+
+.transparent {
+	background: none;
+	box-shadow: none;
+}
+
+.translucent-bg { background: rgba(0, 0, 0, 0.5); }
+
+/* ----------------------- Font & Text ----------------------- */
+
+.upcase { text-transform: uppercase; }
+
+.weight-100 { font-weight: 100; }
+.weight-200 { font-weight: 200; }
+.weight-300 { font-weight: 300; }
+.weight-400 { font-weight: 400; }
+.weight-500 { font-weight: 500; }
+.weight-600 { font-weight: 600; }
+.weight-700 { font-weight: 700; }
+.weight-800 { font-weight: 800; }
+
+.x2 { font-size: 2em !important; }
+.x3 { font-size: 3em !important; }
+.x4 { font-size: 4em !important; }
+.x5 { font-size: 5em !important; }
+.x6 { font-size: 6em !important; }
+.x7 { font-size: 7em !important; }
+.x8 { font-size: 8em !important; }
+
+/* -------------------- Margin & Padding -------------------- */
+
+.margin-small { margin: 2%; }
+.margin-med { margin: 5%; }
+.margin-large { margin: 8%; }
+
+.margin-small-h { margin: 0 2%; }
+.margin-med-h { margin: 0 5%; }
+.margin-large-h { margin: 0 8%; }
+
+.margin-small-v { margin: 2% 0; }
+.margin-med-v { margin: 5% 0; }
+.margin-large-v { margin: 8% 0; }
+
+.remove-margin {margin: 0 !important;}
+.remove-margin-top {margin-top: 0 !important;}
+.remove-all-margin * {margin: 0 !important;}
+
+
+.padding-small { padding: 2%; }
+.padding-med { padding: 5%; }
+.padding-large { padding: 8%; }
+
+.padding-small-h { padding: 0 2%; }
+.padding-med-h { padding: 0 5%; }
+.padding-large-h { padding: 0 8%; }
+
+.padding-small-v { padding: 2% 0; }
+.padding-med-v { padding: 5% 0; }
+.padding-large-v { padding: 8% 0; }
+
+.remove-padding {padding: 0 !important;}
+.remove-padding-top {padding-top: 0 !important;}
+.remove-all-padding * {padding: 0 !important;}
+
+/* -------------------- Parallax Effect -------------------- */
