@@ -4,7 +4,7 @@
 
 /**------------ d3 Pie Chart ----------------------------**/
 var width = $("#pieGraph").width();
-var height = ( $(window).height() - 50);
+var height = "450";
 
 var pie = new d3pie("pieGraph", {
 	"header": {
@@ -28,8 +28,8 @@ var pie = new d3pie("pieGraph", {
 	"size": {
 		"canvasWidth": width,
 		"canvasHeight": height,
-		"pieInnerRadius": "45%",
-		"pieOuterRadius": "50%"
+		"pieInnerRadius": "40%",
+		"pieOuterRadius": "80%"
 	},
 	"data": {
 		"sortOrder": "value-desc",

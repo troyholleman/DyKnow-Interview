@@ -9,9 +9,9 @@
 .orange {color: #FFBA33 !important; }
 .red {color: #FF4444 !important; }
 .purple {color: #AA66CC !important; }
-.light-grey { color: #6C6B6A; !important; }
-.med-grey { color: #404041; !important; }
-.dark-grey { color: #212121; !important; }
+.light-grey { color: #6C6B6A !important; }
+.med-grey { color: #404041 !important; }
+.dark-grey { color: #212121 !important; }
 
 body .white-bg { background-color: white !important; }
 body .g-blue-bg { background-color: #6298BE !important; }
@@ -34,14 +34,13 @@ body .grey-bg { background-color: #6C6B6A !important; }
 
 .upcase { text-transform: uppercase; }
 
+.center { text-align: center !important; }
+
 .weight-100 { font-weight: 100; }
 .weight-200 { font-weight: 200; }
 .weight-300 { font-weight: 300; }
 .weight-400 { font-weight: 400; }
 .weight-500 { font-weight: 500; }
-.weight-600 { font-weight: 600; }
-.weight-700 { font-weight: 700; }
-.weight-800 { font-weight: 800; }
 
 .x2 { font-size: 2em !important; }
 .x3 { font-size: 3em !important; }

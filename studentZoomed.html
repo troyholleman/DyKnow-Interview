@@ -17,12 +17,13 @@
 	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	
 	<!-- Local Stylesheets & Javascripts -------------------------------->
-	<link rel='stylesheet' type='text/css' href='style.css'>
+	<link rel='stylesheet' type='text/css' href='css/style.css'>
+	<link rel='stylesheet' type='text/css' href='css/framework.css'>
+	<link rel='stylesheet' type='text/css' href='css/timeline.css'>
+	<link rel='stylesheet' type='text/css' href='css/font-awesome.min.css'>
 	
-	<script src="d3_chart.js" async></script>
-	<script src="d3pie.min.js"></script>
-	<script src="vertical-timeline/js/main.js" async></script>
-	<script src="vertical-timeline/js/modernizr.js" async></script>
+	<script src="js/d3_chart.js" async></script>
+	<script src="js/d3pie.min.js"></script>
 	
 	<!-- Bootstrap CSS & Javascript ------------------------------------->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -30,13 +31,6 @@
 	
 	<!-- Roboto Font ---------------------------------------------------->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
-	
-	<!-- Font Awesome ---------------------------------------------------->
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	
-	<!-- Low Priority Stylesheets ---------------------------------------->
-	<link rel='stylesheet' type='text/css' href='vertical-timeline/css/style.css'>
-	<link rel='stylesheet' type='text/css' href='vertical-timeline/css/reset.css'>
 
 	<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 	<link rel="shortcut icon" href="/favicon.ico">
@@ -50,26 +44,217 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
-					<h1>LastName, FirstName</h1>
+					<h2 class="header">LastName, FirstName</h2>
 				</div>
 			</div>
 		</div>
 	</div>
 	
 	<div id="home" class="container-fluid">
+		
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-12">
 				<ul class="nav nav-pills">
 					<li role="presentation"><a href="#">
-						<i class="fa fa-desktop"></i>Student's Screen</a>
+						<i class="fa fa-desktop"></i> Student's Screen</a>
 					</li>
-					<li role="presentation" class="active"><a href="#">
-						<i class="fa fa-desktop"></i>Today's Activity</a>
+					<li role="presentation" class="active underline"><a href="#">
+						<i class="fa fa-clock-o"></i> Today's Activity</a>
 					</li>
 				</ul>
 			</div>
-			<div class="col-md-6">
-				<div id="pieGraph" class="grey-bg"></div>
+		</div>
+		
+		<div id="table" class="row">
+			<div class="col-md-6 table-cell">
+				
+				<h2 id="timeline" class="light-grey"><span class="underline">Timeline</span></h2>
+				
+				<!------------------ TIMELINE BEGIN ------------------>
+				<div class="container-fluid">
+				    
+				    <!---- Unordered List ---->
+				    <ul class="timeline">
+				    	
+				    	<!---- List Item ---->
+				        <li>
+				          <div class="timeline-badge lime"><i class="fa fa-check"></i></div>
+				          <div class="timeline-panel">
+				            <div class="timeline-heading">
+				              <h4 class="timeline-title">8:45</h4><span> am</span>
+				            </div>
+				            <div class="timeline-body">
+				              <p>Self reported as "Understanding"</p>
+				            </div>
+				          </div>
+				        </li>
+				        <!---- End List Item ---->
+				        
+				        <!---- Inverted List Item ---->
+				        <li class="timeline-inverted">
+				          <div class="timeline-badge purple-bg"><i class="white fa fa-desktop"></i></div>
+				          <div class="timeline-panel">
+				            <div class="timeline-heading">
+				              <h4 class="timeline-title">8:32</h4><span> am</span>
+				            </div>
+				            <div class="timeline-body">
+				              <p>Viewing wikipedia.org</p>
+				            </div>
+				          </div>
+				        </li>
+				        <!---- End Inverted List Item ---->
+				        
+				        <!---- Inverted List Item ---->
+				        <li class="timeline-inverted">
+				          <div class="timeline-badge lime-bg"><i class="white fa fa-desktop"></i></div>
+				          <div class="timeline-panel">
+				            <div class="timeline-heading">
+				              <h4 class="timeline-title">8:28</h4><span> am</span>
+				            </div>
+				            <div class="timeline-body">
+				              <p>Viewing GeometryApp</p>
+				            </div>
+				          </div>
+				        </li>
+				        <!---- End Inverted List Item ---->
+				        
+				        <!---- Inverted List Item ---->
+				        <li class="timeline-inverted">
+				          <div class="timeline-badge blue-bg"><i class="white fa fa-desktop"></i></div>
+				          <div class="timeline-panel">
+				            <div class="timeline-heading">
+				              <h4 class="timeline-title">8:07</h4><span> am</span>
+				            </div>
+				            <div class="timeline-body">
+				              <p>Viewing mathlab.com</p>
+				            </div>
+				          </div>
+				        </li>
+				        <!---- End Inverted List Item ---->
+				        
+				        <!---- List Item ---->
+				        <li>
+				          <div class="timeline-badge red"><i class="fa fa-times"></i></div>
+				          <div class="timeline-panel">
+				            <div class="timeline-heading">
+				              <h4 class="timeline-title">8:07</h4><span> am</span>
+				            </div>
+				            <div class="timeline-body">
+				              <p>Self reported as “Not Understanding”</p>
+				            </div>
+				          </div>
+				        </li>
+				        <!---- End List Item ---->
+				        
+				        <!---- Inverted List Item ---->
+				        <li class="timeline-inverted">
+				          <div class="timeline-badge lime-bg"><i class="white fa fa-desktop"></i></div>
+				          <div class="timeline-panel">
+				            <div class="timeline-heading">
+				              <h4 class="timeline-title">8:02</h4><span> am</span>
+				            </div>
+				            <div class="timeline-body">
+				              <p>Viewing GeometryApp</p>
+				            </div>
+				          </div>
+				        </li>
+				        <!---- End Inverted List Item ---->
+				        
+				        <!---- Inverted List Item ---->
+				        <li class="timeline-inverted">
+				          <div class="timeline-badge blue-bg"><i class="white fa fa-desktop"></i></div>
+				          <div class="timeline-panel">
+				            <div class="timeline-heading">
+				              <h4 class="timeline-title">7:58</h4><span> am</span>
+				            </div>
+				            <div class="timeline-body">
+				              <p>Viewing mathlab.com</p>
+				            </div>
+				          </div>
+				        </li>
+				        <!---- End Inverted List Item ---->
+				        
+				        <!---- List Item ---->
+				        <li>
+				          <div class="timeline-badge purple"><i class="fa fa-question"></i></div>
+				          <div class="timeline-panel">
+				            <div class="timeline-heading">
+				              <h4 class="timeline-title">7:56</h4><span> am</span>
+				            </div>
+				            <div class="timeline-body">
+				              <p><span class="weight-500">Question:</span> “Did you go to the game this weekend?”</p>
+				              <p><span class="weight-500">Answer:</span> Yes</p>
+				            </div>
+				          </div>
+				        </li>
+				        <!---- End List Item ---->
+				        
+				        <!---- Inverted List Item ---->
+				        <li class="timeline-inverted">
+				          <div class="timeline-badge orange-bg"><i class="white fa fa-desktop"></i></div>
+				          <div class="timeline-panel">
+				            <div class="timeline-heading">
+				              <h4 class="timeline-title">7:55</h4><span> am</span>
+				            </div>
+				            <div class="timeline-body">
+				              <p>Viewing espn.com</p>
+				            </div>
+				          </div>
+				        </li>
+				        <!---- End Inverted List Item ---->
+				        
+				    </ul><!---- End Unordered List ---->
+				</div>
+				<!------------------ END TIMELINE ------------------>
+				
+			</div>
+			
+			<div class="col-md-6 table-cell grey-bg">
+				<h2 class="white"><span class="underline">Total App/Website Viewing Time</span></h2>
+				<div id="pieGraph"></div>
+				
+				<!------------------ TABLE ------------------>
+				
+				<table class="white padding-med-h">
+					<tr class="center">
+						<th>Website or App</th>
+						<th>Color</th>
+						<th>Total Time</th>
+						<th># of Views</th>
+						<th>Avg. Time/View</th>
+					</tr>
+					<tr class="center">
+						<td>mathlab.com</td>
+						<td><i class="fa fa-circle light-blue"></i></td>
+						<td>32:04</td>
+						<td>2</td>
+						<td>16:02</td>
+					</tr>
+					<tr class="center">
+						<td>GeometryApp</td>
+						<td><i class="fa fa-circle lime"></i></td>
+						<td>10:54</td>
+						<td>2</td>
+						<td>5:27</td>
+					</tr>
+					<tr class="center">
+						<td>wikipedia.org</td>
+						<td><i class="fa fa-circle purple"></i></td>
+						<td>5:36</td>
+						<td>1</td>
+						<td>5:36</td>
+					</tr>
+					<tr class="center">
+						<td>espn.com</td>
+						<td><i class="fa fa-circle orange"></i></td>
+						<td>2:14</td>
+						<td>1</td>
+						<td>2:17</td>
+					</tr>
+				</table>
+				
+				<!------------------ END TABLE ------------------>
+				
 			</div>
 		</div>
 		
