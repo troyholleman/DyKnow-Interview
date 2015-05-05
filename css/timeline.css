@@ -1,3 +1,4 @@
+
 .timeline {
     list-style: none;
     padding: 20px 0 20px;
@@ -8,7 +9,7 @@
 
     .timeline:before {
         top: 50px;
-        bottom: 0;
+        bottom: 50px;
         position: absolute;
         content: " ";
         width: 2px;
@@ -99,6 +100,17 @@
             border-bottom-right-radius: 50%;
             border-bottom-left-radius: 50%;
         }
+        
+        .timeline > li > .timeline-text {
+        	color: white;
+        	padding: 10px;
+            width: 200px;
+            text-align: center;
+            margin: 0 auto;
+            background-color: #6C6B6A;
+            z-index: 100;
+            border-radius: 5px;
+        }
 
         .timeline > li.timeline-inverted > .timeline-panel {
             float: right;
@@ -118,26 +130,19 @@
                 right: auto;
             }
 
-.timeline-badge.blue { color: #2CA6DD !important; }
+/*.timeline-badge.blue { color: #2CA6DD !important; }
 .timeline-badge.green { color: #B5CA74 !important; }
 .timeline-badge.lime { color: #99CC00 !important; }
 .timeline-badge.orange { color: #FFBA33 !important; }
 .timeline-badge.red { color: #FF4444 !important; }
-.timeline-badge.purple { color: #AA66CC !important; }
+.timeline-badge.purple { color: #AA66CC !important; }*/
 
-.timeline-badge.blue-bg { background-color: #2CA6DD !important; }
+/*.timeline-badge.blue-bg { background-color: #2CA6DD !important; }
 .timeline-badge.green-bg { background-color: #B5CA74 !important; }
 .timeline-badge.lime-bg { background-color: #99CC00 !important; }
 .timeline-badge.orange-bg { background-color: #FFBA33 !important; }
 .timeline-badge.red-bg { background-color: #FF4444 !important; }
-.timeline-badge.purple-bg { background-color: #AA66CC !important; }
-
-/*.timeline-badge.blue-border { border-color: #2CA6DD !important; }
-.timeline-badge.green-border { border-color: #B5CA74 !important; }
-.timeline-badge.lime-border { border-color: #99CC00 !important; }
-.timeline-badge.orange-border { border-color: #FFBA33 !important; }
-.timeline-badge.red-border { border-color: #FF4444 !important; }
-.timeline-badge.purple-border { border-color: #AA66CC !important; }*/
+.timeline-badge.purple-bg { background-color: #AA66CC !important; }*/
 
 .timeline-title {
     margin-top: 0;
